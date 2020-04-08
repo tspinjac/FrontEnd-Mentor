@@ -65,6 +65,10 @@ header p,
     margin-left: auto;
 }
 
+.box h3 {
+    margin-top: 0;
+}
+
 .border-orange {
     border-top: 5px solid hsl(34, 97%, 64%)
 }
