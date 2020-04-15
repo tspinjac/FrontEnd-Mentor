@@ -1,0 +1,177 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;600&display=swap');
+* {
+    box-sizing: border-box;
+}
+
+
+/* Utill */
+
+
+/* .border1 {
+    border: 2px solid red;
+}
+
+.border2 {
+    border: 1px solid blue;
+} */
+
+html {
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 16px;
+}
+
+body {
+    margin: 0;
+    background: url(../images/bg-pattern-desktop.svg) center no-repeat;
+    background-size: cover;
+}
+
+main {
+    max-width: 1440px;
+    display: flex;
+    margin: 0 auto;
+    align-items: center;
+}
+
+.box-txt {
+    padding: 0 8em;
+    width: 60%;
+    order: 0;
+}
+
+.logo_desktop {
+    order: 0;
+}
+
+.box-txt h1 {
+    font-weight: 300;
+    text-transform: uppercase;
+    color: hsl(0, 36%, 70%);
+    line-height: 1em;
+    font-size: 4em;
+    letter-spacing: 10px;
+}
+
+.box-txt h1 span {
+    font-weight: 600;
+    color: #000;
+}
+
+.box-txt p {
+    max-width: 550px;
+    color: hsl(0, 36%, 70%);
+    line-height: 1.5;
+    letter-spacing: 2px;
+}
+
+form {
+    animation-duration: 1s;
+    animation-name: slidein;
+    margin: 3em 0;
+}
+
+
+/* IMAGE DIO */
+
+.box-img {
+    background: url(../images/hero-desktop.jpg) no-repeat;
+    width: 40%;
+    height: 100vh;
+    order: 0;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    position: relative;
+}
+
+
+/* Form */
+
+form {
+    position: relative;
+}
+
+::placeholder {
+    padding-left: 3em;
+}
+
+#emailInput {
+    all: unset;
+    height: 3em;
+    min-width: 270px;
+    border-radius: 50px;
+    outline: none;
+    border: 2px solid gray;
+    padding-left: 25px;
+}
+
+.submit_img {
+    display: inline-block;
+    width: 3em;
+    background: hsl(0, 36%, 70%);
+    height: 3em;
+    padding: 10px;
+    position: absolute;
+    left: 250px;
+    border-radius: 25px;
+    top: 2px;
+}
+
+.form-errorText,
+.form-okText {
+    display: none;
+    font-size: 13px;
+    color: #C23628;
+}
+
+
+/* Animation */
+
+@keyframes slidein {
+    0% {
+        margin-left: -100%;
+        width: 300%;
+    }
+    100% {
+        margin-left: 0%;
+        width: 100%;
+    }
+}
+
+
+/* MEDIA */
+
+@media screen and (max-width:920px) {
+    .box-img {
+        background: url(../images/hero-mobile.jpg) top no-repeat;
+        background-size: cover;
+        max-height: 250px;
+        min-width: 100%;
+    }
+    main {
+        flex-direction: column;
+    }
+    .logo {
+        transform: translateY();
+    }
+    .box-txt {
+        padding: 2em;
+        width: 100%;
+        max-width: 100%;
+        order: 2;
+    }
+    .box-txt h1 {
+        font-size: 3em;
+    }
+    .translate {
+        transform: translateY(50px);
+    }
+    .box-img {
+        transform: translateY(100px);
+    }
+    .logo {
+        transform: translateY(-250px);
+    }
+}
+
+@media screen and (max-width:600px) {}
