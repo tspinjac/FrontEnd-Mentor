@@ -99,18 +99,32 @@ a {
 }
 
 .error_msg {
-    display: none;
     color: red;
     text-align: right;
     margin-top: 3px;
     font-size: 0.8em;
+    visibility: hidden;
 }
 
 .input_error_border {
     border: 2px solid rgb(230, 15, 15)!Important;
 }
 
-.form-example .submit {
+
+/* .form-example .submit {
+    all: unset;
+    width: 100%;
+    background-color: hsl(154, 59%, 51%);
+    color: #fff;
+    text-transform: uppercase;
+    border: 2px solid hsl(154, 53%, 52%);
+    outline: none;
+    min-height: 3em;
+    border-radius: 8px;
+    font-weight: 600;
+} */
+
+button {
     all: unset;
     width: 100%;
     background-color: hsl(154, 59%, 51%);
@@ -123,30 +137,14 @@ a {
     font-weight: 600;
 }
 
-.form-example .submit:hover {
+button:hover {
     box-shadow: 0 3px 3px rgb(66, 66, 66);
+    cursor: pointer;
 }
 
-.form-example input:focus {
+button:focus {
     border: 2px solid hsl(249, 10%, 26%);
 }
-
-
-/* html,
-body {
-    height: 100%;
-    margin: 0;
-    padding: 0
-}
-
-body:before {
-    content: "";
-    width: 100%;
-    height: 100%;
-    display: block;
-    background: red;
-}
- */
 
 @media only screen and (min-width: 769px) {
     body {
