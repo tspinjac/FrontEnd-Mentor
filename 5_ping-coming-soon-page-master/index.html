@@ -18,13 +18,15 @@
         <div class="logo"><img src="../5_ping-coming-soon-page-master/images/logo.svg" alt=""></div>
     </header>
     <main>
-        <h1>We are launching soon!</h1>
+        <h1><span>We are launching</span> soon!</h1>
         <h3>Subscribe and get notified</h3>
-        <form action="">
+        <form id="form" action="#" class="form" novalidate>
             <div class="form_input">
                 <label for=""></label>
-                <input type="email">
+                <input type="email" id="email" placeholder="Your email address...">
+                <small id="poruka"></small>
                 <input type="submit" value="Notify me">
+
             </div>
         </form>
         <div class="image">
@@ -36,11 +38,11 @@
             <i class="fab fa-twitter"></i>
             <i class="fab fa-instagram"></i>
         </div>
-        <div class="footer_copy">&copy; Copyright Ping. All rights reserved.</div>
+        <div class="copyright">&copy; Copyright Ping. All rights reserved.</div>
     </footer>
 
 
-
+    <script src="../5_ping-coming-soon-page-master/js/script.js"></script>
 </body>
 
 </html>
